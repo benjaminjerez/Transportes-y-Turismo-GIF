@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte y Turismo GIF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-key="navbar_brand">Transporte y Turismo GIF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios" data-key="nav_servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros" data-key="nav_nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria" data-key="nav_galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios" data-key="nav_testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq" data-key="nav_faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog" data-key="nav_blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto" data-key="nav_contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="login.html">Iniciar Sesión</a></li>
+                            <li><a class="dropdown-item" href="register.html">Registrarse</a></li>
+                            <li><a class="dropdown-item" href="profile.html">Mi Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ES / EN
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item lang-switcher" href="#" data-lang="es">Español</a></li>
+                            <li><a class="dropdown-item lang-switcher" href="#" data-lang="en">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container text-center">
+            <h1 class="display-4" data-key="header_title">Transporte y Turismo GIF</h1>
+            <p class="lead" data-key="header_subtitle">Tu socio confiable para viajes y traslados</p>
+            <a href="booking.html" class="btn btn-primary btn-lg mt-3">Reserva Ahora</a>
+        </div>
+    </header>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="servicios_title">Nuestros Servicios</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="servicio-item">
+                        <i class="fas fa-plane-departure fa-3x mb-3"></i>
+                        <h3 data-key="servicios_aeropuerto_title">Traslados al Aeropuerto</h3>
+                        <p data-key="servicios_aeropuerto_desc">Comienza y termina tu viaje con la comodidad y puntualidad que mereces.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicio-item">
+                        <i class="fas fa-map-marked-alt fa-3x mb-3"></i>
+                        <h3 data-key="servicios_turismo_title">Turismo</h3>
+                        <p data-key="servicios_turismo_desc">Descubre nuevos destinos con nuestros tours personalizados y grupales.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicio-item">
+                        <i class="fas fa-star fa-3x mb-3"></i>
+                        <h3 data-key="servicios_artistas_title">Artistas</h3>
+                        <p data-key="servicios_artistas_desc">Ofrecemos un servicio discreto y de primera clase para artistas y personalidades.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="servicio-item">
+                        <i class="fas fa-globe-americas fa-3x mb-3"></i>
+                        <h3 data-key="servicios_viajes_title">Viajes Nacionales e Internacionales</h3>
+                        <p data-key="servicios_viajes_desc">Cruzamos fronteras para llevarte a tu destino, donde sea que esté.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehiculos -->
+    <section id="vehiculos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="flota_title">Nuestra Flota</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-car-side fa-4x mb-3"></i>
+                            <h5 class="card-title" data-key="flota_minivan_title">Mini Van</h5>
+                            <p class="card-text" data-key="flota_minivan_desc">Ideal para grupos pequeños y familias.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shuttle-van fa-4x mb-3"></i>
+                            <h5 class="card-title" data-key="flota_van_title">Van</h5>
+                            <p class="card-text" data-key="flota_van_desc">Perfecta para grupos medianos y tours.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-bus fa-4x mb-3"></i>
+                            <h5 class="card-title" data-key="flota_bus_title">Bus</h5>
+                            <p class="card-text" data-key="flota_bus_desc">La mejor opción para grandes grupos y eventos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora de Tarifas -->
+    <section id="calculadora" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="calculadora_title">Calcula tu Tarifa</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card p-4 shadow">
+                        <form id="fareCalculatorForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="calc_origen" class="form-label" data-key="calc_origen">Origen</label>
+                                    <input type="text" class="form-control" id="calc_origen" placeholder="Ej: Aeropuerto SCL">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="calc_destino" class="form-label" data-key="calc_destino">Destino</label>
+                                    <input type="text" class="form-control" id="calc_destino" placeholder="Ej: Tu Hotel">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="calc_pasajeros" class="form-label" data-key="calc_pasajeros">Número de Pasajeros</label>
+                                    <input type="number" class="form-control" id="calc_pasajeros" min="1">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="calc_vehiculo" class="form-label" data-key="calc_vehiculo">Tipo de Vehículo</label>
+                                    <select class="form-select" id="calc_vehiculo">
+                                        <option selected data-key="calc_vehiculo_option1">Elegir...</option>
+                                        <option value="minivan" data-key="calc_vehiculo_option2">Mini Van</option>
+                                        <option value="van" data-key="calc_vehiculo_option3">Van</option>
+                                        <option value="bus" data-key="calc_vehiculo_option4">Bus</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="submit" class="btn btn-primary" data-key="calc_btn">Calcular Tarifa Estimada</button>
+                            </div>
+                        </form>
+                        <div id="fareResult" class="mt-4 text-center" style="display: none;">
+                            <h4 data-key="calc_resultado_title">Tarifa Estimada</h4>
+                            <p class="fs-3 fw-bold text-success" id="fareAmount"></p>
+                            <small class="text-muted" data-key="calc_nota">Esta es una tarifa estimada. La tarifa final puede variar.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 data-key="nosotros_title">Sobre Nosotros</h2>
+                    <p data-key="nosotros_desc1">Transporte y Turismo GIF es una empresa familiar dedicada a ofrecer soluciones de transporte confiables y de alta calidad. Fundada por Daniel Parra Miranda, nuestra misión es garantizar la seguridad, comodidad y puntualidad en cada uno de nuestros servicios.</p>
+                    <p data-key="nosotros_desc2">Con años de experiencia en el sector, nos hemos especializado en una amplia gama de servicios, desde traslados ejecutivos y turismo hasta el transporte de artistas, siempre con un enfoque en la satisfacción del cliente.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="https://via.placeholder.com/250" class="img-fluid rounded-circle founder-img" alt="Foto de Daniel Parra Miranda, fundador de Transporte y Turismo GIF">
+                    <h5 class="mt-3" data-key="nosotros_founder_name">Daniel Parra Miranda</h5>
+                    <p class="text-muted" data-key="nosotros_founder_role">Dueño y Fundador</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="galeria_title">Galería</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="https://source.unsplash.com/800x600/?van" data-toggle="lightbox">
+                        <img src="https://source.unsplash.com/800x600/?van" alt="Nuestra moderna van de transporte para turistas." class="img-fluid rounded">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://source.unsplash.com/800x600/?bus" data-toggle="lightbox">
+                        <img src="https://source.unsplash.com/800x600/?bus" alt="Autobús de lujo para viajes largos y grupos grandes." class="img-fluid rounded">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://source.unsplash.com/800x600/?airport" data-toggle="lightbox">
+                        <img src="https://source.unsplash.com/800x600/?airport" alt="Pasajero llegando al aeropuerto con nuestro servicio de traslado." class="img-fluid rounded">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://source.unsplash.com/800x600/?chile" data-toggle="lightbox">
+                        <img src="https://source.unsplash.com/800x600/?chile" alt="Paisaje de las Torres del Paine en Chile, uno de nuestros destinos turísticos." class="img-fluid rounded">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://source.unsplash.com/800x600/?concert" data-toggle="lightbox">
+                        <img src="https://source.unsplash.com/800x600/?concert" alt="Escenario de un concierto, representando nuestro servicio de transporte de artistas." class="img-fluid rounded">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://source.unsplash.com/800x600/?road-trip" data-toggle="lightbox">
+                        <img src="https://source.unsplash.com/800x600/?road-trip" alt="Carretera escénica durante un viaje, mostrando la experiencia de nuestros tours." class="img-fluid rounded">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="testimonios_title">Testimonios de Clientes</h2>
+            <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonio">
+                            <p data-key="testimonio1_text">"¡Excelente servicio! Muy puntuales y amables. El vehículo estaba impecable. Totalmente recomendados."</p>
+                            <h5 data-key="testimonio1_author">- María González</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <p data-key="testimonio2_text">"Contraté el servicio para un tour familiar y fue una experiencia maravillosa. El conductor fue muy profesional y conocía muy bien la zona."</p>
+                            <h5 data-key="testimonio2_author">- Juan Pérez</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <p data-key="testimonio3_text">"El mejor servicio de transporte para artistas. Discreción, seguridad y confort. Siempre los elijo para mis traslados."</p>
+                            <h5 data-key="testimonio3_author">- Artista Famoso</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="faq_title">Preguntas Frecuentes</h2>
+            <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-key="faq1_q">
+                            ¿Con cuánta antelación debo reservar?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body" data-key="faq1_a">
+                            Recomendamos reservar con al menos 48 horas de antelación para garantizar la disponibilidad, especialmente en temporada alta. Para servicios especiales o grupos grandes, sugerimos una semana de antelación.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-key="faq2_q">
+                            ¿Qué métodos de pago aceptan?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body" data-key="faq2_a">
+                            Aceptamos transferencias bancarias, tarjetas de crédito/débito y efectivo. El pago se puede realizar al momento de la reserva o directamente con el conductor.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-key="faq3_q">
+                            ¿Sus vehículos cuentan con medidas de seguridad?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                        <div class="accordion-body" data-key="faq3_a">
+                            Sí, toda nuestra flota cumple con las normativas de seguridad vigentes. Los vehículos son inspeccionados regularmente y cuentan con cinturones de seguridad para todos los pasajeros, GPS y seguro de viaje.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="blog_title">Nuestro Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/800x600/?travel-tips" class="card-img-top" alt="Mapa y brújula, representando consejos para planificar un viaje.">
+                        <div class="card-body">
+                            <h5 class="card-title" data-key="blog1_title">5 Consejos para tu Próximo Viaje</h5>
+                            <p class="card-text" data-key="blog1_desc">Descubre cómo prepararte para que tu viaje sea una experiencia inolvidable y sin contratiempos.</p>
+                            <a href="#" class="btn btn-primary" data-key="blog1_btn">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/800x600/?santiago-chile" class="card-img-top" alt="Vista panorámica de la ciudad de Santiago de Chile.">
+                        <div class="card-body">
+                            <h5 class="card-title" data-key="blog2_title">Destinos Imperdibles Cerca de Santiago</h5>
+                            <p class="card-text" data-key="blog2_desc">Explora los mejores lugares para una escapada de fin de semana cerca de la capital chilena.</p>
+                            <a href="#" class="btn btn-primary" data-key="blog2_btn">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/800x600/?van-interior" class="card-img-top" alt="Interior espacioso y cómodo de una de nuestras vans.">
+                        <div class="card-body">
+                            <h5 class="card-title" data-key="blog3_title">La Comodidad en Nuestros Vehículos</h5>
+                            <p class="card-text" data-key="blog3_desc">Conoce más sobre el equipamiento y las comodidades que ofrecemos en nuestra flota para tu confort.</p>
+                            <a href="#" class="btn btn-primary" data-key="blog3_btn">Leer Más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Cotización -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-key="cotizacion_title">Solicita tu Cotización</h2>
+            <div class="row">
+                <div class="col-lg-7">
+                    <form id="quoteForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nombre" class="form-label" data-key="form_nombre">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label" data-key="form_email">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="telefono" class="form-label" data-key="form_telefono">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="tipo_servicio" class="form-label" data-key="form_tipo_servicio">Tipo de Servicio</label>
+                                <select class="form-select" id="tipo_servicio">
+                                    <option selected data-key="form_servicio_option1">Elegir...</option>
+                                    <option value="aeropuerto" data-key="form_servicio_option2">Traslado al Aeropuerto</option>
+                                    <option value="turismo" data-key="form_servicio_option3">Turismo</option>
+                                    <option value="artistas" data-key="form_servicio_option4">Transporte de Artistas</option>
+                                    <option value="viajes" data-key="form_servicio_option5">Viajes Nacionales/Internacionales</option>
+                                    <option value="otro" data-key="form_servicio_option6">Otro</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="origen" class="form-label" data-key="form_origen">Origen</label>
+                                <input type="text" class="form-control" id="origen" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="destino" class="form-label" data-key="form_destino">Destino</label>
+                                <input type="text" class="form-control" id="destino" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="fecha" class="form-label" data-key="form_fecha">Fecha del Viaje</label>
+                                <input type="date" class="form-control" id="fecha" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="pasajeros" class="form-label" data-key="form_pasajeros">Número de Pasajeros</label>
+                                <input type="number" class="form-control" id="pasajeros" min="1" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label" data-key="form_mensaje">Mensaje Adicional</label>
+                            <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg" data-key="form_btn">Enviar Cotización</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 mt-5 mt-lg-0">
+                    <div class="info-box">
+                        <h4 data-key="contact_info_title">Información de Contacto</h4>
+                        <p><i class="fas fa-user me-2"></i> <span data-key="contact_info_owner">Daniel Parra Miranda</span></p>
+                        <p><i class="fas fa-phone me-2"></i> <span data-key="contact_info_company_phone">Empresa: +56926247876</span></p>
+                        <p><i class="fas fa-mobile-alt me-2"></i> <span data-key="contact_info_personal_phone">Personal: +56995888109</span></p>
+                        <p><i class="fas fa-envelope me-2"></i> <span data-key="contact_info_email">transturgif@gmail.com</span></p>
+                    </div>
+                    <div class="map-container mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.294824838464!2d-70.6482680848099!3d-33.44208498077539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a9ee0e02c5%3A0x6d2f3c2b6b5d8d3b!2sPlaza%20de%20Armas%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1678886543210!5m2!1ses!2scl" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section id="instagram" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5" data-key="instagram_title">Síguenos en Instagram</h2>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/400x400/?van,sunset" class="img-fluid instagram-img" alt="Publicación de Instagram: Van al atardecer"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/400x400/?mountain,road" class="img-fluid instagram-img" alt="Publicación de Instagram: Camino en la montaña"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/400x400/?group,happy" class="img-fluid instagram-img" alt="Publicación de Instagram: Grupo de turistas felices"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/400x400/?city,night" class="img-fluid instagram-img" alt="Publicación de Instagram: Ciudad de noche"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/400x400/?beach,van" class="img-fluid instagram-img" alt="Publicación de Instagram: Van en la playa"></a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <a href="#" target="_blank"><img src="https://source.unsplash.com/400x400/?luggage,airport" class="img-fluid instagram-img" alt="Publicación de Instagram: Equipaje en el aeropuerto"></a>
+                </div>
+            </div>
+            <a href="#" class="btn btn-primary" target="_blank" data-key="instagram_btn"><i class="fab fa-instagram me-2"></i>Ver más en @TransporteTurismoGIF</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p data-key="footer_text">&copy; 2025 Transporte y Turismo GIF. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/56926247876" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="js/script.js?v=2"></script>
+</body>
+</html>
